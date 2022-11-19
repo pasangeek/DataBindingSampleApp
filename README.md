@@ -29,7 +29,11 @@ class MainActivity : AppCompatActivity() {
 //binding.textView1.text = "helloooo"
         binding.name="hHHelllo1"
         binding.button.setOnClickListener {
-
+//which are similer to 
+//if(binding.state==true )
+//binding.state=false
+//else
+//binding.state=true
             binding.state = binding.state != true
         }
 
