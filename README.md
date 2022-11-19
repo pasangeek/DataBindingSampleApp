@@ -40,3 +40,21 @@ class MainActivity : AppCompatActivity() {
 
 layout
  android:visibility="@{state? View.VISIBLE:View.INVISIBLE}"
+ 
+ xml
+ android:visibility="@{state? View.VISIBLE:View.INVISIBLE}"
+
+DataBindingSampleApp/app/src/main/res/layout/activity_main.xml
+ <?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <import type="android.view.View"/>
+        <variable
+            name="name" type="String" />
+        <variable
+            name="state" type="Boolean" />
+
+    </data>
